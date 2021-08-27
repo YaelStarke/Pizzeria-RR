@@ -1,0 +1,266 @@
+*{
+	padding:0px;
+	margin:0px;
+	box-sizing:border-box;
+}
+
+html, body{
+	background-color:black;
+	color:white;
+	font-size:15px;
+	height:100%;
+	width:100%;
+	padding:0;
+	margin:0;
+	font-family: 'Staatliches', cursive;
+}
+
+a{
+	text-decoration:none;
+	color:white;
+}
+li{
+	list-style:none;
+}
+
+/*------header-------*/
+header{
+	width:100%;
+	margin-bottom:100px;
+}
+
+.logo{
+	text-align:center;
+}
+.logo img{
+	display:inline-block;
+}
+.nombre_pizzeria p{
+	font-size:30px;
+	text-align:center;
+}
+
+.submenu{
+	background-color:rgb(243, 156, 18,0.8);
+	width:100%;
+	position:sticky;
+	top:20px;
+}
+
+ul li {
+	display:inline-block;
+	margin:15px;
+
+}
+
+.submenu1{
+	text-align:center;
+}
+
+video{
+	width:100%;
+}
+
+/*-------grid de main--------*/
+.contenedor_productos{
+	display:grid;
+	grid-template-columns:repeat(1,1fr);
+	grid-gap:15px;
+	width:90%;
+	margin:auto;
+}
+
+.contenedor_productos img{
+	width:100%;
+}
+.item_1_productos p{
+	width:100%
+	background-color:white;
+	text-align:center;
+}
+/*------parallax-------*/
+
+.parallax_seccion {
+	background:fixed no-repeat 50% 50%;
+	background-size:cover;
+	margin-top:100px;
+	margin-bottom:100px;
+
+}
+
+#parallax_redes_sociales {
+	background-image:url(img/pizza2.jpg);
+	height:100%
+	width:100%;
+}
+.redes_sociales img{
+	display:inline-block;
+	margin:20px;
+	height:80px;
+	width:80px;
+}
+
+.redes_sociales{
+	text-align:center;
+}
+
+/*--------grid de videos---------*/
+
+
+.grid_video{
+	display:grid;
+	grid-template-columns: repeat(1,1fr);
+	width:90%;
+	margin:auto;
+}
+
+.item_video iframe{
+	width:100%;
+}
+
+footer{
+	width:100%;
+	background-color:rgb(243, 156, 18 );
+}
+
+.ubicacion{
+	display:grid;
+	grid-template-columns:repeat(1,1fr);
+	width:90%;
+	margin:auto;
+}
+
+.item_ubicacion iframe{
+	width:100%;
+	margin:auto;
+	margin-top:20px;
+}
+
+.item_ubicacion p{
+	font-size: 30px;
+	text-align:center;
+	margin:20px;
+}
+
+@media only screen and (min-width: 480px ){
+	html, body{
+		background-color:rgb(81, 90, 90);
+		font-size:20px;
+	}
+
+		.submenu1{
+		text-align:right;
+		}
+		.logo{
+			margin-bottom:80px;
+			text-align:left;
+		}
+		.logo img{
+			display:inline-block;
+			position:relative;
+		}
+		.nombre_pizzeria p{
+			margin-top:-100px;
+			font-size:50px;
+			text-align:right;
+			margin-right:10px
+		}
+/*------grid de @media-------*/
+		.contenedor_productos{
+			display:grid;
+			grid-template-columns:repeat(2,1fr);
+			grid-template-rows:repeat(2,1fr);
+			grid-gap:30px;
+			width:90%;
+			margin:auto;
+		}
+
+		.contenedor_productos img{
+			width:100%;
+			height:100%;
+			object-fit:cover;
+		}
+		.item_1_productos p{
+			width:100%
+			background-color:white;
+			text-align:center;
+		}
+/*------grid de video------*/
+		.grid_video{
+			display:grid;
+			grid-template-columns:repeat(1 , 1fr); 
+			grid-gap:10px;
+			width:90%;
+			height:100%;
+			margin:auto;
+
+		}
+		.item_video iframe{
+			width:100%;
+			height:100%;
+
+		}
+}
+
+@media only screen and (min-width: 769px){
+	html,body{
+		background-color:rgb(135, 54, 0);
+		font-size:25px;
+		padding:0;
+		margin:0;
+	}
+	.submenu1{
+	text-align:left;
+		}
+		.logo{
+			margin-bottom:80px;
+			text-align:right;
+		}
+		.logo img{
+			display:inline-block;
+			position:relative;
+		}
+		.nombre_pizzeria p{
+			margin-top:-100px;
+			font-size:50px;
+			text-align:left;
+			margin-left:20px
+		}
+		.contenedor_productos{
+			display:grid;
+			grid-template-columns:repeat(3,1fr);
+			grid-template-rows:repeat(2,1fr);
+			width:100%;
+			margin:auto;
+		}
+		.main_grid_products{
+			width:100%;
+		}
+
+		.contenedor_productos img{
+			width:100%;
+			height:100%;
+			object-fit:cover;
+		}
+		.item_1_productos p{
+			width:100%
+			background-color:white;
+			text-align:center;
+		}
+		.contenedor_ptoductos #pizza{
+			grid-column:1 / 4;
+		}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
